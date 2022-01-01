@@ -13,7 +13,7 @@ static void SetupLed()
 
         gpio_toggle(GPIOA, GPIO5);
 
-        for (auto i = 0; i < 200000; i++)
+        for (auto i = 0; i < 100000; i++)
         {
             ;;
         }

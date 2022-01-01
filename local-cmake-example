@@ -1,7 +1,10 @@
-set(ARM_TOOLCHAIN [path-to-toolchain])
-set(Python3_EXECUTABLE [path-to-python])
-set(OPENOCD_DIR [path-to-openocd])
+set(ARM_TOOLCHAIN [path-to-toolchain-bin-dir])
+set(OPENOCD_DIR [path-to-openocd-bin-dir])
+set(NINJA_DIR [path-to-ninja-exe-dir])
+set(Python3_EXECUTABLE [path-to-python-exe])
 
+# ARM_TOOLCHAIN should be set to bin directory from xpack-arm-none-eabi-gcc.
+#
 # Copy this script to folder ".local", name it "local.cmake" and add as parameter to CMake options
 # Cmake options should look like:
 # -DLOCAL_CFG=[path-to-src]].local/local.cmake -G Ninja
